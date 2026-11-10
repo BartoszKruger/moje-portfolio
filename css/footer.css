@@ -1,0 +1,28 @@
+/* ══════════════════════════════════════════════════════════════
+   FOOTER — Clean Minimalist Modernist
+   ══════════════════════════════════════════════════════════════ */
+
+.footer {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-primary);
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.footer__brand {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.footer__copy {
+  color: var(--text-muted);
+}

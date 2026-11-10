@@ -1,0 +1,57 @@
+/* ══════════════════════════════════════════════════════════════
+   DESIGN TOKENS — Modernist Soft Platinum & Silver
+   Deep Matte Black, Elevated Charcoal, Refined Metallics & Subtle Gradients
+   ══════════════════════════════════════════════════════════════ */
+:root {
+  /* Canvas & Surfaces */
+  --bg-primary:         #09090B; /* Deep Matte Black */
+  --bg-surface:         #121215; /* Subtle Elevated Charcoal */
+  --bg-surface-hover:   #17171C; /* Card hover state */
+  --bg-surface-elevated:#1C1C22;
+  --bg-pill:            rgba(255, 255, 255, 0.04);
+
+  /* Modernist Hairline Borders */
+  --border-subtle:      rgba(255, 255, 255, 0.08);
+  --border-hover:       rgba(255, 255, 255, 0.20);
+  --border-strong:      rgba(255, 255, 255, 0.32);
+
+  /* Typography Palette (Refined Soft Platinum & Silver) */
+  --text-primary:       #ECEEF2; /* Soft Luminous Platinum */
+  --text-secondary:     #9FA4AF; /* Editorial Zinc / Neutral Silver */
+  --text-muted:         #6C727F; /* Subdued Slate */
+  --text-code:          #E5E7EB; /* Neutral Monospace */
+
+  /* Modernist Platinum / Silver Metals */
+  --accent-white:       #FFFFFF;
+  --accent-platinum:    #E2E4E9; /* Pure Platinum */
+  --accent-silver:      #C8CBD3; /* Cool Silver */
+  --accent-emerald:     #10B981; /* Technical QA Accent */
+
+  /* Modernist Subtle Header & Border Gradients */
+  --gradient-heading:       linear-gradient(180deg, #FFFFFF 0%, #B8BAC4 100%);
+  --gradient-subheading:    linear-gradient(180deg, #F3F4F6 0%, #9DA1B0 100%);
+  --gradient-silver-accent: linear-gradient(135deg, #F0F1F4 0%, #A5A9B8 100%);
+  --gradient-card-border:   linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.03) 100%);
+  --gradient-card-border-hover: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.07) 100%);
+
+  /* Typography */
+  --font-sans:          'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono:          'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Layout Sizing */
+  --container-max:      1160px;
+  --container-narrow:   680px;
+
+  /* Transitions */
+  --ease-smooth:        cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast:      150ms;
+  --duration-med:       200ms;
+  --duration-slow:      350ms;
+
+  /* Corner Radius */
+  --radius-xs:          4px;
+  --radius-sm:          6px;
+  --radius-md:          10px;
+  --radius-lg:          16px;
+  --radius-pill:        9999px;
+}

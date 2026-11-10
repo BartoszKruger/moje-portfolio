@@ -1,0 +1,127 @@
+/* ══════════════════════════════════════════════════════════════
+   RESPONSIVE STYLES — Modernist Clean Layout
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Tablet (≤ 1024px) ── */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid-2,
+  .cards-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .viewport-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .viewport-grid .viewport-card:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  .viewport-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .module-item__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pdf-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile (≤ 768px) ── */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3.5rem 0 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-bio p {
+    font-size: 0.95rem;
+  }
+
+  .header__hamburger {
+    display: flex;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: rgba(9, 9, 11, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-subtle);
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.25rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--duration-med) var(--ease-smooth);
+  }
+
+  .header__nav--open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .header__nav-link {
+    font-size: 1rem;
+  }
+
+  .project-window__body {
+    padding: 1.5rem;
+  }
+
+  .project-window__title {
+    font-size: 1.25rem;
+  }
+
+  .detail-card {
+    padding: 1.25rem;
+  }
+
+  .clean-table th,
+  .clean-table td {
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .viewport-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .viewport-grid .viewport-card:nth-child(3) {
+    grid-column: auto;
+  }
+
+  .contact-wrap {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .pdf-card__actions {
+    flex-direction: column;
+  }
+
+  .btn--pdf {
+    width: 100%;
+    text-align: center;
+  }
+}
