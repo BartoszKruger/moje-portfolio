@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bartosz Krüger — Junior Game &amp; Level Designer</title>
+  <meta name="description" content="Portfolio of Bartosz Krüger — Junior Game &amp; Level Designer specializing in Unity 2D/3D, spatial level architecture, non-verbal onboarding, and technical QA.">
+  
+  <!-- Modernist Typography: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Modernist Stylesheet Suite -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/project-detail.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Minimalist Sticky Header -->
+  <header class="header" id="navbar">
+    <div class="header__inner">
+      <a href="#" class="header__brand" data-route="home" data-scroll="about">
+        <span class="header__name">Bartosz Krüger</span>
+      </a>
+
+      <nav>
+        <ul class="header__nav" id="navLinks">
+          <li><a href="#about" class="header__nav-link" data-nav="about">About</a></li>
+          <li><a href="#projects" class="header__nav-link" data-nav="projects">Projects</a></li>
+          <li><a href="#contact" class="header__nav-link" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="header__hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Application Router -->
+  <main id="app">
+
+    <!-- ════════════════════════════════════════════════════════════
+         PAGE 1: HOME (DECLUTTERED MODERNIST PORTFOLIO)
+         ════════════════════════════════════════════════════════════ -->
+    <div id="view-home" class="view view--active">
+
+      <!-- SECTION 1: MINIMALIST "ABOUT ME" HERO -->
+      <section class="hero-section" id="about">
+        <div class="container">
+          <div class="hero-wrap">
+            <h1 class="hero-title">Bartosz Krüger</h1>
+            <p class="hero-subtitle">Junior Game &amp; Level Designer</p>
+
+            <div class="hero-bio">
+              <p>
+                I am a Game Development student at Collegium Da Vinci in Poznań and a certified IT Technician (INF.02, INF.03). In my design practice, I combine conceptual system and level architecture with direct technical execution inside the game engine.
+              </p>
+              <p>
+                Rather than treating design as purely theoretical documentation, I work directly in Unity (2D &amp; 3D)—calibrating physics components, verifying colliders and triggers, integrating C# scripts, and diagnosing console exceptions. I specialize in environmental storytelling, player onboarding through 'invisible tutorials' backed by market benchmarks, and structured logic/puzzle systems.
+              </p>
+            </div>
+
+            <!-- Inline Skills & Tools Row -->
+            <div class="skills-wrap">
+              <div class="skills-row">
+                <span class="skill-pill">Game &amp; System Design</span>
+                <span class="skill-pill">Level Design &amp; Onboarding</span>
+                <span class="skill-pill">Unity 2D/3D</span>
+                <span class="skill-pill">C#</span>
+                <span class="skill-pill">Physics Calibration</span>
+                <span class="skill-pill">Technical QA</span>
+                <span class="skill-pill">GitLab</span>
+                <span class="skill-pill">Jira</span>
+                <span class="skill-pill">Miro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: LARGE INTERACTIVE PROJECT WINDOWS -->
+      <section class="projects-section" id="projects">
+        <div class="container">
+          <div class="section-heading-row">
+            <h2 class="section-heading">Selected Projects</h2>
+            <span class="section-note">2 Case Studies</span>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project Card 1: Cuckoo Clock -->
+            <article class="project-window" data-route="cuckoo-clock" tabindex="0" role="link" aria-label="Open Cuckoo Clock case study">
+              <div class="project-window__media">
+                <img src="CuckooClock/CuckooClockGRA1.png" alt="Cuckoo Clock Gameplay Preview" class="project-window__img" loading="lazy">
+              </div>
+              <div class="project-window__body">
+                <div class="project-window__meta">
+                  <div class="project-window__tags">
+                    <span>Unity 2D/3D</span>
+                    <span class="bullet">•</span>
+                    <span>Steampunk Platformer</span>
+                    <span class="bullet">•</span>
+                    <span>Game &amp; Level Design</span>
+                  </div>
+                  <h3 class="project-window__title">Cuckoo Clock</h3>
+                  <p class="project-window__desc">
+                    A steampunk arcade platformer where the player controls a mechanical cuckoo inside a giant clockwork mechanism. Designed environmental hazards, structured the onboarding tutorial level, calibrated 2D object physics, and resolved critical C# &amp; collider bugs.
+                  </p>
+                </div>
+                <div class="project-window__action">
+                  <span class="project-window__btn">View Project &amp; Files &rarr;</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 2: Free Fall -->
+            <article class="project-window" data-route="free-fall" tabindex="0" role="link" aria-label="Open Free Fall case study">
+              <div class="project-window__media">
+                <img src="Free Fall/freefallGRA.png" alt="Free Fall Falling Elevator VR Console Preview" class="project-window__img" loading="lazy">
+              </div>
+              <div class="project-window__body">
+                <div class="project-window__meta">
+                  <div class="project-window__tags">
+                    <span>Asymmetric VR Co-op</span>
+                    <span class="bullet">•</span>
+                    <span>Falling Elevator</span>
+                    <span class="bullet">•</span>
+                    <span>Elevator Console Logic</span>
+                  </div>
+                  <h3 class="project-window__title">Free Fall</h3>
+                  <p class="project-window__desc">
+                    An asymmetric co-op VR puzzle game set inside a malfunctioning, free-falling elevator. While trapped inside the falling lift cockpit, the VR operator communicates under extreme time pressure with an outside manual expert. Designed the mechanics, state machines, and defusal decision trees exclusively for 3 core elevator modules: Frequency Knobs, 3×3 Alphanumeric Matrix, and Color &amp; Shape Sequence.
+                  </p>
+                </div>
+                <div class="project-window__action">
+                  <span class="project-window__btn">View Project &amp; Files &rarr;</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: MINIMALIST CONTACT & CV SECTION -->
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <div class="contact-wrap">
+            <div class="contact-left">
+              <h3>Get in Touch</h3>
+              <p>
+                Currently open for Junior Game Designer, Junior Level Designer, and Technical QA opportunities in Poznań, remote, or hybrid arrangements.
+              </p>
+            </div>
+            <div class="contact-links">
+              <a href="mailto:bkruger@edu.cdv.pl" class="btn btn--secondary">Email: bkruger@edu.cdv.pl ↗</a>
+              <a href="CV_Bartosz_Kruger.pdf" target="_blank" rel="noopener noreferrer" download="CV_Bartosz_Kruger.pdf" class="btn btn--primary">Download CV ↓</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /#view-home -->
+
+    <!-- ════════════════════════════════════════════════════════════
+         PAGE 2: CUCKOO CLOCK DETAIL VIEW
+         ════════════════════════════════════════════════════════════ -->
+    <div id="view-cuckoo-clock" class="view">
+      <div class="project-page">
+        <div class="container">
+          
+          <!-- Top Back Button -->
+          <div class="project-topbar">
+            <a href="#" class="btn--back" data-route="home" data-scroll="projects">
+              &larr; Back to Portfolio
+            </a>
+          </div>
+
+          <!-- Project Header -->
+          <header class="project-header">
+            <div class="project-header__tags">
+              <span class="skill-pill">Unity 2022 LTS (2D/3D)</span>
+              <span class="skill-pill">Mid-Production</span>
+              <span class="skill-pill">Steampunk Platformer</span>
+            </div>
+            <h1 class="project-header__title">Cuckoo Clock</h1>
+            <p class="project-header__subtitle">Steampunk Arcade Platformer (Unity 2D/3D)</p>
+            <div class="project-header__role">
+              Role: Game Designer, Level Designer &amp; Technical QA (Joined Mid-Production)
+            </div>
+            <p class="project-header__desc">
+              Joined the development team mid-production to expand environmental gameplay mechanics, design the player onboarding experience, fine-tune game feel through Unity physics calibration, and conduct technical QA debugging.
+            </p>
+          </header>
+
+          <!-- Section A: Environmental Hazards & Mechanics Design -->
+          <section class="detail-section">
+            <div class="detail-section__header">
+              <h2 class="detail-section__title">Environmental Hazards &amp; Mechanics Design</h2>
+              <p class="detail-section__desc">
+                Designed 4 steampunk-themed environmental hazards and puzzle systems to enrich level variety and test player timing and spatial awareness.
+              </p>
+            </div>
+            <div class="cards-grid-2">
+              <div class="detail-card">
+                <div class="detail-card__top">
+                  <div class="detail-card__title-row">
+                    <h3 class="detail-card__title">1. Steam Piston</h3>
+                    <span class="detail-card__pl-tag">Tłokowy Zgniatacz</span>
+                  </div>
+                  <p class="detail-card__desc">
+                    Rhythmic timing-test trap with an instant-kill crush mechanic that doubles as a rideable moving platform. Players anticipate mechanical cycle rhythms to traverse vertical shafts.
+                  </p>
+                </div>
+                <div class="detail-card__footer">
+                  <code>CycleSpeed: 1.4s</code>
+                  <code>WaitTime: 0.8s</code>
+                  <code>Damage: InstantKill</code>
+                </div>
+              </div>
+
+              <div class="detail-card">
+                <div class="detail-card__top">
+                  <div class="detail-card__title-row">
+                    <h3 class="detail-card__title">2. The Spinning Aeolipile</h3>
+                    <span class="detail-card__pl-tag">Rotacyjny Eolipil</span>
+                  </div>
+                  <p class="detail-card__desc">
+                    Rotating steam barrier featuring a configurable angular safe zone and knockback force upon contact. Tests rotational air-dash precision as players leap through sweeping steam jets.
+                  </p>
+                </div>
+                <div class="detail-card__footer">
+                  <code>SafeZoneWidth: 45°</code>
+                  <code>AngularVelocity: 60°/s</code>
+                  <code>KnockbackForce: 8.5N</code>
+                </div>
+              </div>
+
+              <div class="detail-card">
+                <div class="detail-card__top">
+                  <div class="detail-card__title-row">
+                    <h3 class="detail-card__title">3. The Pressure Loop</h3>
+                    <span class="detail-card__pl-tag">Sprzężenie Zwrotne</span>
+                  </div>
+                  <p class="detail-card__desc">
+                    Environmental logic puzzle requiring valve manipulation and steam pressure rerouting to unlock blocked level sections. Encourages environmental observation before executing acrobatic lines.
+                  </p>
+                </div>
+                <div class="detail-card__footer">
+                  <code>ValveThreshold: 100%</code>
+                  <code>PressureFlowRate: 12u/s</code>
+                  <code>ReleaseDelay: 2.0s</code>
+                </div>
+              </div>
+
+              <div class="detail-card">
+                <div class="detail-card__top">
+                  <div class="detail-card__title-row">
+                    <h3 class="detail-card__title">4. Fog Chimney</h3>
+                    <span class="detail-card__pl-tag">Komin Kondensacyjny</span>
+                  </div>
+                  <p class="detail-card__desc">
+                    Cyclical visibility hazard that obscures the player's field of view with dense steam clouds. Forces reliance on rhythmic audio cues and telegraphing animations to navigate perilous drops.
+                  </p>
+                </div>
+                <div class="detail-card__footer">
+                  <code>FogDensity: 0.85</code>
+                  <code>FogDuration: 3.5s</code>
+                  <code>DissipationRate: 0.4/s</code>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section B: Level Design & Player Onboarding -->
+          <section class="detail-section">
+            <div class="detail-section__header">
+              <h2 class="detail-section__title">Level Design &amp; Player Onboarding Architecture</h2>
+              <p class="detail-section__desc">
+                Architected an "invisible tutorial" structure delivering player education through spatial pacing, safe experimentation rooms, and progressive hazard combinations.
+              </p>
+            </div>
+            <div class="cards-grid-3">
+              <div class="detail-card">
+                <div class="detail-card__top">
+                  <div class="detail-card__title-row">
+                    <h3 class="detail-card__title">Stage 1: Familiarization</h3>
+                    <span class="detail-card__pl-tag">Safe Zone</span>
+                  </div>
+                  <p class="detail-card__desc">
+                    Risk-free movement familiarization zone with generous jump headroom and no lethal hazards, allowing players to calibrate movement parabolas and ledge grabs.
+                  </p>
+                </div>
+              </div>
+
+              <div class="detail-card">
+                <div class="detail-card__top">
+                  <div class="detail-card__title-row">
+                    <h3 class="detail-card__title">Stage 2: Isolation</h3>
+                    <span class="detail-card__pl-tag">Single Hazards</span>
+                  </div>
+                  <p class="detail-card__desc">
+                    Single-variable challenge rooms isolating individual hazards (e.g., solo piston timing, single gear rotation), allowing clean mental model formation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="detail-card">
+                <div class="detail-card__top">
+                  <div class="detail-card__title-row">
+                    <h3 class="detail-card__title">Stage 3: Culmination</h3>
+                    <span class="detail-card__pl-tag">Synergy Test</span>
+                  </div>
+                  <p class="detail-card__desc">
+                    Comprehensive test section combining air dash, navigating rhythmic steam pistons, and manipulating interactive gear items to unlock the clock tower gateway.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Benchmark Callout -->
+            <div class="callout-card">
+              <h4 class="callout-card__title">Comparative Benchmark Analysis (Ori, Rayman Legends, Animal Well)</h4>
+              <p class="callout-card__desc">
+                Conducted an industry benchmark study comparing commercial platformer onboarding patterns. Formulated actionable UI/UX recommendations for tutorial prompts, introducing high-contrast dark-gold backgrounds and clear controller button iconography (<code>[R/Y]</code> prompts) to ensure prompt legibility against dense mechanical background art.
+              </p>
+            </div>
+
+            <!-- Architectural Blockout & Spatial Route Mapping -->
+            <div style="margin-top: 1.5rem;">
+              <div class="viewport-card" data-lightbox="CuckooClock/Rozwój_Poziomu_Tutorialowego (1).PNG" data-caption="Cuckoo Clock — Tutorial Level Spatial Blockout &amp; Route Architecture (Unity Scene View)">
+                <div class="viewport-card__media" style="aspect-ratio: 16 / 10;">
+                  <img src="CuckooClock/Rozwój_Poziomu_Tutorialowego (1).PNG" alt="Tutorial Level Spatial Blockout and Route Architecture in Unity" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>Tutorial Level Spatial Blockout &amp; Route Architecture (Unity Scene Hierarchy)</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section C: Unity Physics Calibration -->
+          <section class="detail-section">
+            <div class="detail-section__header">
+              <h2 class="detail-section__title">Unity 2D Physics Calibration &amp; Game Feel</h2>
+              <p class="detail-section__desc">
+                Diagnosed and fixed excessive knockback and ice-like sliding of interactive objects (oil cans, cassettes, gears) inside Unity by systematically auditing Rigidbody2D parameters and surface physics materials.
+              </p>
+            </div>
+            <div class="physics-card">
+              <table class="clean-table">
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Pre-Pass (Default)</th>
+                    <th>Post-Pass (Calibrated)</th>
+                    <th>Physical Purpose</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>Rigidbody2D.mass</code></td>
+                    <td>0.1 – 0.2 (Floaty)</td>
+                    <td>1.2 – 2.5 kg</td>
+                    <td>Gives physical weight to collectible and interactable objects</td>
+                  </tr>
+                  <tr>
+                    <td><code>Rigidbody2D.drag</code></td>
+                    <td>0.0 (Infinite slide)</td>
+                    <td>2.8 – 3.5</td>
+                    <td>Simulates atmospheric air resistance inside clock machinery</td>
+                  </tr>
+                  <tr>
+                    <td><code>PhysicsMaterial2D.friction</code></td>
+                    <td>0.05 (Ice-like)</td>
+                    <td>0.65 – 0.85</td>
+                    <td>Prevents unwanted sliding off narrow moving platform edges</td>
+                  </tr>
+                  <tr>
+                    <td><code>CollisionDetectionMode2D</code></td>
+                    <td>Discrete (Tunneling)</td>
+                    <td>Continuous</td>
+                    <td>Prevents high-velocity projectiles and cuckoos tunneling through doors</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Section D: Technical QA & C# Debugging -->
+          <section class="detail-section">
+            <div class="detail-section__header">
+              <h2 class="detail-section__title">Technical QA &amp; C# Engine Debugging</h2>
+              <p class="detail-section__desc">
+                Diagnosed critical console runtime exceptions, patched level geometry sequence-breaks, and audited checkpoint persistence bugs directly inside Unity and Visual Studio.
+              </p>
+            </div>
+            <div class="qa-card-list">
+              <div class="qa-item">
+                <div class="qa-item__header">
+                  <h3 class="qa-item__title">MissingComponentException in PlayerCrushDetectorScript.cs</h3>
+                  <span class="qa-item__badge qa-item__badge--resolved">Resolved Exception</span>
+                </div>
+                <p class="qa-item__desc">
+                  Investigated recurring runtime console exceptions on lines 17 and 27 of <code>PlayerCrushDetectorScript.cs</code>. Diagnosed that dropped item prefabs and teleporter triggers lacked <code>BoxCollider2D</code> components, causing null references during crush passes. Restructured prefabs with verified colliders and defensive null-guards.
+                </p>
+                <div class="qa-item__tags">
+                  <code>PlayerCrushDetectorScript.cs:17,27</code>
+                  <code>BoxCollider2D</code>
+                  <code>NullReferenceDefense</code>
+                </div>
+              </div>
+
+              <div class="qa-item">
+                <div class="qa-item__header">
+                  <h3 class="qa-item__title">Cogwheel Door Progression Bypass (Sequence Break)</h3>
+                  <span class="qa-item__badge qa-item__badge--resolved">Exploit Patched</span>
+                </div>
+                <p class="qa-item__desc">
+                  Identified a geometry and animation flaw in the cogwheel door (<code>geardoor</code>). Players could perform an airborne wall-jump off the upper door casing, flying completely over the collision boundary and bypassing essential progression locks without collecting required key items. Redesigned boundary colliders and ceiling geometry to enforce progression gating.
+                </p>
+                <div class="qa-item__tags">
+                  <code>geardoor Prefab</code>
+                  <code>Bounding Collider Fix</code>
+                  <code>Sequence Break Prevention</code>
+                </div>
+              </div>
+
+              <div class="qa-item">
+                <div class="qa-item__header">
+                  <h3 class="qa-item__title">Checkpoint Respawn Door State Desync</h3>
+                  <span class="qa-item__badge qa-item__badge--resolved">State Audited</span>
+                </div>
+                <p class="qa-item__desc">
+                  Tracked and documented a checkpoint bug where opened doors failed to reset their state properly upon player respawn. Documented reproducible test steps and linked gate persistence to the global checkpoint state manager.
+                </p>
+                <div class="qa-item__tags">
+                  <code>Checkpoint Manager</code>
+                  <code>State Persistence QA</code>
+                  <code>Door Desync Fix</code>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- In-Game Screenshots -->
+          <section class="detail-section">
+            <div class="detail-section__header">
+              <h2 class="detail-section__title">In-Game Captures</h2>
+              <p class="detail-section__desc">
+                Clockwork level architecture, lighting shaders, and obstacle navigation. Click to inspect at full resolution.
+              </p>
+            </div>
+            <div class="viewport-grid">
+              <div class="viewport-card" data-lightbox="CuckooClock/CuckooClockGRA1.png" data-caption="Cuckoo Clock — In-Game Clockwork Environment &amp; Platforming">
+                <div class="viewport-card__media">
+                  <img src="CuckooClock/CuckooClockGRA1.png" alt="In-Game Clockwork Environment &amp; Platforming" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>Level Platforming</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+
+              <div class="viewport-card" data-lightbox="CuckooClock/CuckooClockGra2.png" data-caption="Cuckoo Clock — Level Architecture &amp; Steampunk Lighting">
+                <div class="viewport-card__media">
+                  <img src="CuckooClock/CuckooClockGra2.png" alt="Level Architecture &amp; Steampunk Lighting" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>Lighting &amp; Architecture</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+
+              <div class="viewport-card" data-lightbox="CuckooClock/CuckooClockGRA3.png" data-caption="Cuckoo Clock — Gameplay Mechanics &amp; Obstacle Navigation">
+                <div class="viewport-card__media">
+                  <img src="CuckooClock/CuckooClockGRA3.png" alt="Gameplay Mechanics &amp; Obstacle Navigation" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>Obstacle Navigation</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Mechanics Schematics / Blueprints -->
+          <section class="detail-section">
+            <div class="detail-section__header">
+              <h2 class="detail-section__title">Mechanics &amp; Logic Schematics</h2>
+              <p class="detail-section__desc">
+                Vector logic diagrams illustrating hazard activation thresholds, angular safe zones, and environmental flow loops. Click to expand.
+              </p>
+            </div>
+            <div class="viewport-grid-2">
+              <div class="viewport-card" data-lightbox="CuckooClock/Pulapka_Mechanika (1).png" data-caption="Mechanic Blueprint 1 — Steam Trap &amp; Hazard Logic">
+                <div class="viewport-card__media">
+                  <img src="CuckooClock/Pulapka_Mechanika (1).png" alt="Steam Trap &amp; Hazard Logic Blueprint" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>Steam Trap &amp; Hazard Logic</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+
+              <div class="viewport-card" data-lightbox="CuckooClock/Pulapka_Mechanika2 (1).png" data-caption="Mechanic Blueprint 2 — Environmental Obstacle System">
+                <div class="viewport-card__media">
+                  <img src="CuckooClock/Pulapka_Mechanika2 (1).png" alt="Environmental Obstacle System Blueprint" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>Environmental Obstacle System</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+
+              <div class="viewport-card" data-lightbox="CuckooClock/Pulapka_Mechanika3 (1).png" data-caption="Mechanic Blueprint 3 — Spatial &amp; Timing Parameters">
+                <div class="viewport-card__media">
+                  <img src="CuckooClock/Pulapka_Mechanika3 (1).png" alt="Spatial &amp; Timing Parameters Blueprint" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>Spatial &amp; Timing Parameters</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+
+              <div class="viewport-card" data-lightbox="CuckooClock/Pulapka_Mechanika4 (1).png" data-caption="Mechanic Blueprint 4 — System Interaction Flow">
+                <div class="viewport-card__media">
+                  <img src="CuckooClock/Pulapka_Mechanika4 (1).png" alt="System Interaction Flow Blueprint" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>System Interaction Flow</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+
+              <div class="viewport-card" data-lightbox="CuckooClock/Rozwój_Poziomu_Tutorialowego (1).PNG" data-caption="Cuckoo Clock — Full Level Architecture &amp; Spatial Progression Map">
+                <div class="viewport-card__media">
+                  <img src="CuckooClock/Rozwój_Poziomu_Tutorialowego (1).PNG" alt="Full Level Architecture and Spatial Progression Map" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>Level Architecture &amp; Spatial Routing Map</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Technical Documentation & QA Reports -->
+          <section class="detail-section">
+            <div class="detail-section__header">
+              <h2 class="detail-section__title">Technical Documentation &amp; QA Reports</h2>
+              <p class="detail-section__desc">
+                Access original engineering reports, bug documentation, benchmark analyses, and tutorial blueprints produced during development.
+              </p>
+            </div>
+            <div class="pdf-grid">
+              <!-- Report: Tutorial Level Flow & Blueprint Sketch -->
+              <div class="pdf-card">
+                <div>
+                  <h3 class="pdf-card__title">Tutorial Level Design Sketch &amp; Progression Blueprint</h3>
+                  <p class="pdf-card__desc">Original architectural level design blueprint mapping the 8 onboarding checkpoints (1.1–1.8), time-dilation mechanics, hazard spacing, inventory gates (gears, oil, cassettes), and teleporter trajectories.</p>
+                </div>
+                <div class="pdf-card__actions">
+                  <a href="CuckooClock/Szkic_Tutoriala (1).pdf" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--pdf">View PDF ↗</a>
+                  <a href="CuckooClock/Szkic_Tutoriala (1).pdf" download="CuckooClock_Tutorial_Level_Design_Sketch.pdf" class="btn btn--primary btn--pdf">Download PDF ↓</a>
+                </div>
+              </div>
+
+              <!-- Report 1 -->
+              <div class="pdf-card">
+                <div>
+                  <h3 class="pdf-card__title">Test Report: Object Physics &amp; Technical Bugs</h3>
+                  <p class="pdf-card__desc">Detailed technical analysis of <code>MissingComponentException</code> in <code>PlayerCrushDetectorScript.cs</code>, collider verification, and <code>Rigidbody2D</code> physics calibration for interactive objects.</p>
+                </div>
+                <div class="pdf-card__actions">
+                  <a href="CuckooClock/Test Report_ Object Physics &amp; Technical Bugs.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--pdf">View PDF ↗</a>
+                  <a href="CuckooClock/Test Report_ Object Physics &amp; Technical Bugs.pdf" download="CuckooClock_Physics_and_Technical_Bugs_Report.pdf" class="btn btn--primary btn--pdf">Download PDF ↓</a>
+                </div>
+              </div>
+
+              <!-- Report 2 -->
+              <div class="pdf-card">
+                <div>
+                  <h3 class="pdf-card__title">QA Test Report: Functional Verification &amp; System Defects</h3>
+                  <p class="pdf-card__desc">Comprehensive QA verification of prefabs, checkpoint state persistence, <code>geardoor</code> geometry exploits, inventory system, and dash mechanics.</p>
+                </div>
+                <div class="pdf-card__actions">
+                  <a href="CuckooClock/QA Test Report_ Functional Verification &amp; System Defects.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--pdf">View PDF ↗</a>
+                  <a href="CuckooClock/QA Test Report_ Functional Verification &amp; System Defects.pdf" download="CuckooClock_QA_Functional_Verification_Report.pdf" class="btn btn--primary btn--pdf">Download PDF ↓</a>
+                </div>
+              </div>
+
+              <!-- Report 3 -->
+              <div class="pdf-card">
+                <div>
+                  <h3 class="pdf-card__title">Tutorial Level Comparative Analysis Report</h3>
+                  <p class="pdf-card__desc">Comparative benchmark analysis of commercial onboarding architectures (<em>Ori and the Blind Forest</em>, <em>Rayman Legends</em>, <em>Animal Well</em>) to inform level pacing and non-verbal tutorials.</p>
+                </div>
+                <div class="pdf-card__actions">
+                  <a href="CuckooClock/Tutorial Level Comparative Analysis Report (1).pdf" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--pdf">View PDF ↗</a>
+                  <a href="CuckooClock/Tutorial Level Comparative Analysis Report (1).pdf" download="CuckooClock_Tutorial_Comparative_Analysis.pdf" class="btn btn--primary btn--pdf">Download PDF ↓</a>
+                </div>
+              </div>
+
+              <!-- Report 4 -->
+              <div class="pdf-card">
+                <div>
+                  <h3 class="pdf-card__title">Tutorial Level In-Game Text Specification</h3>
+                  <p class="pdf-card__desc">Specification of in-game tutorial strings, prompt copy, trigger thresholds, and high-contrast controller button iconography guidelines.</p>
+                </div>
+                <div class="pdf-card__actions">
+                  <a href="CuckooClock/Tutorial Level In-Game Text.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--pdf">View PDF ↗</a>
+                  <a href="CuckooClock/Tutorial Level In-Game Text.pdf" download="CuckooClock_Tutorial_InGame_Text.pdf" class="btn btn--primary btn--pdf">Download PDF ↓</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div><!-- /#view-cuckoo-clock -->
+
+    <!-- ════════════════════════════════════════════════════════════
+         PAGE 2: FREE FALL DETAIL VIEW
+         ════════════════════════════════════════════════════════════ -->
+    <div id="view-free-fall" class="view">
+      <div class="project-page">
+        <div class="container">
+
+          <!-- Top Back Button -->
+          <div class="project-topbar">
+            <a href="#" class="btn--back" data-route="home" data-scroll="projects">
+              &larr; Back to Portfolio
+            </a>
+          </div>
+
+          <!-- Project Header -->
+          <header class="project-header">
+            <div class="project-header__tags">
+              <span class="skill-pill">Asymmetric VR Co-op</span>
+              <span class="skill-pill">Falling Elevator Setting</span>
+              <span class="skill-pill">3 Elevator Modules</span>
+              <span class="skill-pill">Operations Manual</span>
+            </div>
+            <h1 class="project-header__title">Free Fall</h1>
+            <p class="project-header__subtitle">Asymmetric Co-op VR Elevator Defusal Game</p>
+            <div class="project-header__role">
+              Role: System &amp; Logic Designer / Elevator Console Modules &amp; Manual Author
+            </div>
+            <p class="project-header__desc">
+              Set inside a malfunctioning, plunging elevator shaft, <em>Free Fall</em> is an asymmetric VR co-op puzzle game inspired by <em>Keep Talking and Nobody Explodes</em>. The VR player is trapped inside the falling elevator cockpit facing imminent impact, relying entirely on verbal coordination with an external operator holding the physical Operations Manual.
+            </p>
+            <p class="project-header__desc" style="margin-top: 0.85rem;">
+              Within the project, I was specifically and exclusively responsible for the design, mechanics, and defusal logic of the <strong>3 core elevator console modules</strong>: <strong>Frequency Knobs</strong>, <strong>3×3 Alphanumeric Keypad Matrix</strong>, and <strong>Color &amp; Shape Sequence</strong>—authoring their complete mathematical decision trees, state tables, and corresponding manual documentation.
+            </p>
+          </header>
+
+          <!-- 3 Core Elevator Modules Breakdown -->
+          <section class="detail-section">
+            <div class="detail-section__header">
+              <h2 class="detail-section__title">3 Core Elevator Defusal Modules (Direct Responsibility)</h2>
+              <p class="detail-section__desc">
+                Solely designed and calibrated the emergency defusal mechanics, algorithmic decision trees, and manual documentation for the 3 primary elevator console modules:
+              </p>
+            </div>
+
+            <!-- Module 1: Frequency Knobs -->
+            <div class="module-item">
+              <div class="module-item__top">
+                <h3 class="module-item__title">
+                  <span>1. Frequency Knobs</span>
+                  <span class="skill-pill">Regulator Częstotliwości</span>
+                </h3>
+                <div class="skills-row">
+                  <code>Elevator Radio Console</code>
+                  <code>2 Rotary Dials (0–9)</code>
+                  <code>GHz Scale</code>
+                </div>
+              </div>
+              <div class="module-item__grid">
+                <div class="module-item__col">
+                  <h4>Core Mechanics</h4>
+                  <p>
+                    The trapped VR operator views an elevator radio frequency display in GHz alongside two rotary dials (0–9). Under rapid elevator descent, the external manual expert interrogates the frequency value and elevator fuse indicators to guide precise calibration before system power failure.
+                  </p>
+                </div>
+                <div class="module-item__col">
+                  <h4>Branching Decision Rules</h4>
+                  <ul class="rule-list">
+                    <li><strong>Frequencies &ge; 100 GHz:</strong> Branch based on active elevator module count (> 2 modules vs &le; 2 modules). Check final digit zero parity to assign asymmetric left/right dial offsets (e.g. 220 GHz vs 224 GHz pathways).</li>
+                    <li><strong>Frequencies 10–99 GHz:</strong> Check divisibility by 5 and inspect elevator fuse indicators. If divisible by 5 with intact fuses, set dials to complementary sum values; otherwise route through secondary modulation tables.</li>
+                    <li><strong>Single-Digit Frequencies:</strong> Direct fallback calibration state derived from the serial number checksum modulo dial limit.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 2: 3x3 Keypad Matrix -->
+            <div class="module-item">
+              <div class="module-item__top">
+                <h3 class="module-item__title">
+                  <span>2. 3×3 Alphanumeric Keypad Matrix</span>
+                  <span class="skill-pill">Matryca 3×3</span>
+                </h3>
+                <div class="skills-row">
+                  <code>Elevator Access Terminal</code>
+                  <code>9-Button Matrix</code>
+                  <code>6-Char Serial</code>
+                </div>
+              </div>
+              <div class="module-item__grid">
+                <div class="module-item__col">
+                  <h4>Core Mechanics</h4>
+                  <p>
+                    To override the emergency brake lockout on the falling elevator, the defusal operator inputs a specific button activation pattern on a 3×3 keypad (columns A–C, rows 1–3). Correct pattern selection requires cross-referencing the elevator cab's 6-character alphanumeric serial number against a hierarchical priority logic table.
+                  </p>
+                </div>
+                <div class="module-item__col">
+                  <h4>Branching Decision Rules</h4>
+                  <ul class="rule-list">
+                    <li><strong>Numeric Ending Rule:</strong> If the 6-character serial ends in a digit, test whether the digit is even or odd to activate diagonal vs cross-axis keypad clusters.</li>
+                    <li><strong>Numeric Beginning Rule:</strong> If the serial begins with a number, prioritize corner keys (A1, C1, A3, C3) matching serial prefix magnitude.</li>
+                    <li><strong>Sum Parity &amp; Consonant Distribution:</strong> Calculate sum of all digits; if even and contains &ge; 2 consonants, activate center row B.</li>
+                    <li><strong>Full-Matrix Fallback:</strong> If no previous conditions trigger, execute default inverted-L perimeter sequence.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 3: Color & Shape Sequence -->
+            <div class="module-item">
+              <div class="module-item__top">
+                <h3 class="module-item__title">
+                  <span>3. Color &amp; Shape Sequence</span>
+                  <span class="skill-pill">Sekwencja Kolorów i Kształtów</span>
+                </h3>
+                <div class="skills-row">
+                  <code>Elevator Stabilization Console</code>
+                  <code>Pool: 4–7 Objects</code>
+                  <code>Target: 3 Tiles</code>
+                </div>
+              </div>
+              <div class="module-item__grid">
+                <div class="module-item__col">
+                  <h4>Core Mechanics</h4>
+                  <p>
+                    A variable pool of 4–7 distinct geometric glyphs appears on the elevator diagnostic screen with differing colors and shapes. The defusal operator must synthesize verbal descriptions of shapes and pigments to input a precisely ordered 3-tile sequence to stabilize the elevator's descent speed.
+                  </p>
+                </div>
+                <div class="module-item__col">
+                  <h4>Branching Decision Rules</h4>
+                  <ul class="rule-list">
+                    <li><strong>Warm vs Cool Spectrum:</strong> Partition items into warm (Red, Orange, Yellow) vs cool (Blue, Cyan, Violet). Dominance determines primary sequence direction.</li>
+                    <li><strong>Sharp vs Smooth Geometry:</strong> Classify polygonal/faceted shapes (Triangles, Diamonds, Hexagons) vs curvilinear forms (Circles, Ovals). Sharp shapes take precedence.</li>
+                    <li><strong>Total Object Count Threshold:</strong> Dynamic sub-rules apply if total pool size equals 4, 5, 6, or 7 objects, dictating sequence tie-breaking.</li>
+                    <li><strong>Attribute Tie Fallback:</strong> If multiple shapes share identical chromatic and geometric priority, sort alphabetically by localized shape name.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- In-Game VR Captures -->
+          <section class="detail-section">
+            <div class="detail-section__header">
+              <h2 class="detail-section__title">Falling Elevator VR Console Captures</h2>
+              <p class="detail-section__desc">
+                Captures from the Unity XR simulation showing the tactile falling elevator cockpit, dual rotary dials, alphanumeric matrix keypad, and diagnostic monitors. Click to enlarge.
+              </p>
+            </div>
+            <div class="viewport-grid">
+              <div class="viewport-card" data-lightbox="Free Fall/freefallGRA.png" data-caption="Free Fall — Falling Elevator VR Cockpit &amp; Control Panel">
+                <div class="viewport-card__media">
+                  <img src="Free Fall/freefallGRA.png" alt="Falling Elevator VR Cockpit &amp; Control Panel" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>Elevator VR Cockpit</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+
+              <div class="viewport-card" data-lightbox="Free Fall/freefallGRA2.png" data-caption="Free Fall — Elevator Diagnostic Display &amp; Frequency Tuner">
+                <div class="viewport-card__media">
+                  <img src="Free Fall/freefallGRA2.png" alt="Elevator Diagnostic Display &amp; Frequency Tuner" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>Frequency Tuner Console</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+
+              <div class="viewport-card" data-lightbox="Free Fall/freefallGRA3.png" data-caption="Free Fall — Emergency Elevator Interface &amp; Operator View">
+                <div class="viewport-card__media">
+                  <img src="Free Fall/freefallGRA3.png" alt="Emergency Elevator Interface &amp; Operator View" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>Emergency Console Interface</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Visual Schematics & Decision Trees -->
+          <section class="detail-section">
+            <div class="detail-section__header">
+              <h2 class="detail-section__title">Algorithmic Decision Trees &amp; Manual Schematics</h2>
+              <p class="detail-section__desc">
+                Original decision trees, state machines, and alphanumeric lookup matrices authored for the Defusal Manual covering the 3 elevator console modules. Click to expand.
+              </p>
+            </div>
+            <div class="viewport-grid-2">
+              <div class="viewport-card" data-lightbox="Free Fall/Free Fall mechanika1_1.jpg" data-caption="Decision Tree — Frequency Knobs (Page 1)">
+                <div class="viewport-card__media">
+                  <img src="Free Fall/Free Fall mechanika1_1.jpg" alt="Decision Tree — Frequency Knobs (Page 1)" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>Frequency Knobs Decision Tree (Part 1)</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+
+              <div class="viewport-card" data-lightbox="Free Fall/Free Fall mechanika1_2.jpg" data-caption="Decision Tree — Frequency Knobs (Page 2)">
+                <div class="viewport-card__media">
+                  <img src="Free Fall/Free Fall mechanika1_2.jpg" alt="Decision Tree — Frequency Knobs (Page 2)" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>Frequency Knobs Decision Tree (Part 2)</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+
+              <div class="viewport-card" data-lightbox="Free Fall/Free Fall mechanika2_1.jpg" data-caption="Matrix &amp; Sequence Logic — 3×3 Keypad (Page 1)">
+                <div class="viewport-card__media">
+                  <img src="Free Fall/Free Fall mechanika2_1.jpg" alt="Matrix &amp; Sequence Logic — 3×3 Keypad (Page 1)" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>3×3 Keypad &amp; Matrix Logic (Part 1)</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+
+              <div class="viewport-card" data-lightbox="Free Fall/Free Fall mechanika2_2.jpg" data-caption="Matrix &amp; Sequence Logic — 3×3 Keypad (Page 2)">
+                <div class="viewport-card__media">
+                  <img src="Free Fall/Free Fall mechanika2_2.jpg" alt="Matrix &amp; Sequence Logic — 3×3 Keypad (Page 2)" class="viewport-card__img" loading="lazy">
+                </div>
+                <div class="viewport-card__caption">
+                  <span>3×3 Keypad &amp; Matrix Logic (Part 2)</span>
+                  <span class="viewport-card__zoom-hint">Click to enlarge ↗</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Operations Manual PDF -->
+          <section class="detail-section">
+            <div class="detail-section__header">
+              <h2 class="detail-section__title">Official Operations Manual</h2>
+              <p class="detail-section__desc">
+                The complete localized player manual designed for the defusal operator to guide the trapped VR player through elevator stabilization.
+              </p>
+            </div>
+            <div class="pdf-card">
+              <div>
+                <h3 class="pdf-card__title">Free Fall: Defusal and Operations Manual (PDF)</h3>
+                <p class="pdf-card__desc">
+                  The definitive operator handbook containing complete decision logic, mathematical condition tables for Frequency Knobs, 3&times;3 Keypad serial matching, and Color/Shape sequence priorities authored to resolve emergency elevator lockouts.
+                </p>
+              </div>
+              <div class="pdf-card__actions">
+                <a href="Free Fall/Free Fall_ Defusal and Operations Manual.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--pdf">View Manual ↗</a>
+                <a href="Free Fall/Free Fall_ Defusal and Operations Manual.pdf" download="FreeFall_Defusal_and_Operations_Manual.pdf" class="btn btn--primary btn--pdf">Download Manual ↓</a>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div><!-- /#view-free-fall -->
+
+  </main>
+
+  <!-- Clean Minimalist Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">Bartosz Krüger — Game &amp; Level Designer</span>
+        <span class="footer__copy">&copy; 2026. Built with Unity, C# &amp; Design Systems.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close Lightbox">✕ Close</button>
+    <div class="lightbox__content">
+      <figure class="lightbox__figure">
+        <img src="" alt="Full resolution view" class="lightbox__image" id="lightboxImage">
+        <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- Application Scripts -->
+  <script src="js/router.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
